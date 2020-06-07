@@ -3,8 +3,6 @@ import { useAppState } from "../AppContext";
 
 export default function BookList({ completeList }) {
   let [{ toRead, completed }, dispatch] = useAppState();
-  console.log(toRead);
-  console.log(completed);
   return (
     <div>
       <h1>{completeList ? `Completed` : `To Read`}</h1>
